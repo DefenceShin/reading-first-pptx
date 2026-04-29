@@ -2,6 +2,8 @@
 
 ## Tone
 
+Default template baseline: use `resources/红色.pptx` for layout behavior, page rhythm, information density, header treatment, chart/table styling, and red-anchor composition when the user gives no special visual requirement. If that relative path is unavailable, use `D:\Skills Development\pptx\resources\红色.pptx`. Keep the color and typography tokens below as the default visual system.
+
 - restrained
 - premium
 - analytical
@@ -39,6 +41,8 @@ It should not feel like a dashboard, poster, blueprint, engineering drawing, or 
 - Navy `#263F6A`
 - Crimson/Red `#AF0837`
 
+These are the default production colors. Do not replace them with colors extracted from `resources/红色.pptx` or another reference unless the user explicitly asks for a different brand or palette.
+
 Use navy mainly for:
 
 - module labels
@@ -66,10 +70,12 @@ Keep the background white or very light neutral. Do not introduce additional dom
 - English body text: `corpoS`
 - Mixed-language text boxes: keep Chinese on `汉仪中宋简`, English titles on `corpoA`, and English body on `corpoS`; do not collapse the whole box into one font.
 
+These are the default production fonts. Do not replace them with fonts observed in `resources/红色.pptx` or another reference unless the user explicitly asks for a different brand or typography system.
+
 ## Layout
 
 - keep the top area visually light
-- use a thin top rule, compact report header, or small metadata area when it helps the page read like a working business deck
+- use the report-like header rhythm from `resources/红色.pptx`: thin top rule, compact metadata, and restrained page marks when useful
 - let the middle body carry most of the information density
 - prefer asymmetrical editorial layouts
 - use one dominant analysis zone plus one or more support zones when possible
@@ -81,6 +87,7 @@ Keep the background white or very light neutral. Do not introduce additional dom
 - use red as a concentrated visual anchor on one major region of a slide; do not flood the whole page with red
 - use navy to carry structure in headers, table bands, diagram nodes, labels, and chart framing
 - use light gray fields to support tables and modules without becoming visually dominant
+- if no other reference is provided, make body pages feel structurally close to `resources/红色.pptx`: dense, modular, editable, chart/table heavy, and consulting-report oriented
 
 ## Density
 

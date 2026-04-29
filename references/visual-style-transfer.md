@@ -1,6 +1,10 @@
 # Visual Style Transfer
 
-Use this when the user provides a visual reference and asks for a deck to match, imitate, absorb, borrow from, or feel like that style. Convert the reference into editable PowerPoint rules instead of copying surfaces blindly.
+Use this only when the user explicitly provides a non-default visual reference and asks for a deck to match, imitate, absorb, borrow from, or feel like that style.
+
+Default behavior: if the user does not provide a special visual target, use `resources/红色.pptx` as the template baseline and `style-anchor.md` as the color/font authority. If the relative template path is unavailable, use `D:\Skills Development\pptx\resources\红色.pptx`. Do not ask the user to choose a visual direction.
+
+When this file is triggered, convert the external reference into editable PowerPoint rules instead of copying surfaces blindly.
 
 ## What To Extract
 
@@ -20,15 +24,20 @@ Do not merely name the source style. State the reusable choices that can be appl
 ## Translation Process
 
 1. Identify which parts of the reference are essential and which are incidental.
-2. Decide whether the target deck should fully adopt the reference, lightly borrow it, or blend it with the existing `style-anchor.md`.
-3. Convert web, poster, or image-model cues into native PowerPoint equivalents:
+2. Extract real evidence where possible:
+   - for a website, inspect screenshots/CSS/brand pages when available
+   - for a brand guide, capture actual colors, fonts, spacing, and component rules
+   - for a sample deck, inspect its masters, layouts, typography, colors, and recurring objects
+   - for a screenshot, infer only visible traits and label uncertain items as inferred
+3. Write a compact style brief or design-spec before building when the external style materially changes the default.
+4. Decide whether the target deck should fully adopt the reference, lightly borrow it, or blend it with the default `resources/红色.pptx` structure and `style-anchor.md` colors/fonts.
+5. Convert web, poster, or image-model cues into native PowerPoint equivalents:
    - CSS spacing -> slide margins and grid
    - web cards -> editable panels, table regions, or grouped shape modules
    - page hero -> cover or section divider only
    - animation -> static sequencing, layering, or progressive page rhythm
    - brand accent -> controlled highlight, not blanket recoloring
-4. Produce a short style brief before building when style risk is high.
-5. Apply the style consistently across title, body, charts, tables, diagrams, and image assets.
+6. Apply the style consistently across title, body, charts, tables, diagrams, and image assets.
 
 ## Native PPTX Boundary
 
@@ -52,6 +61,8 @@ Visual target:
 - Image/asset treatment:
 - What to avoid:
 - PPT translation:
+- Evidence source:
+- Uncertain/inferred items:
 ```
 
 For a deck, also define:

@@ -17,6 +17,7 @@ description: Use when Codex needs to create or remake a high-density, reading-or
 - Apply the project writing rules to outward-facing PPT copy when they exist.
 - Use the `PowerPoint` skill for actual deck creation, editing, rendering, and verification when available.
 - Reuse the skill resources as an operating system: select a layout, select components, apply style rules, then run quality gates.
+- Use `resources/红色.pptx` as the default template/style baseline when the user gives no special visual requirement. If the relative path is unavailable, use `D:\Skills Development\pptx\resources\红色.pptx`. Do not ask whether to use it.
 
 ## Workflow
 
@@ -49,11 +50,13 @@ Then restate the task in 2-4 lines.
 
 ### 2. Lock baseline
 
-- Use the company template in `../../resources/` as the default page size, page frame, fonts, and basic recurring elements when it exists.
+- Use `resources/红色.pptx` as the default reference template for page size, layout behavior, report header rhythm, density, chart/table treatment, and red-anchor composition when it exists. If the current project does not contain that relative path, use `D:\Skills Development\pptx\resources\红色.pptx`.
+- Keep the original color and typography system from `references/style-anchor.md` while using that template baseline.
+- Do not ask the user to choose the default template/style unless the user explicitly asks for a different template, brand, website, screenshot, sample deck, or visual direction.
 - Inspect any available master, theme, or prior deck before creating slide geometry.
 - Keep the visual language native to PowerPoint: editable text boxes, tables, charts, shapes, lines, and grouped elements.
 - Avoid rasterizing whole slides, embedding HTML screenshots as slide bodies, or using non-editable image composites unless the source itself is an image.
-- If the user provides a style target, translate it through `references/visual-style-transfer.md` before designing slides.
+- If the user explicitly provides a non-default style target, translate it through `references/visual-style-transfer.md` before designing slides.
 
 If the workspace also contains real internal report decks or prior business presentations, use them only to infer density expectations, grouping habits, and practical tolerance for single-slide information load. Do not depend on any one file as a required reference.
 
@@ -80,14 +83,14 @@ Before writing slides, read the relevant references:
 - `references/content-rules.md` for density, inference, and wording boundaries.
 - `references/slide-patterns.md` for page structure selection.
 - `references/component-system.md` for reusable native PowerPoint building blocks.
-- `references/visual-style-transfer.md` when the user asks to match, imitate, absorb, or reference a visual style.
+- `references/visual-style-transfer.md` only when the user asks to match, imitate, absorb, or reference a non-default external visual style.
 - `references/quality-gates.md` for preflight and final checks.
 
 Preflight checks:
 
 - Confirm output path and expected file name.
-- Confirm page size, template, fonts, and color tokens. Default to the original style-anchor colors and fonts, even when a prototype deck is used for layout inspiration.
-- Confirm whether the deck should follow the fixed skill style, the user's supplied visual target, or a controlled blend of both.
+- Confirm page size, default template baseline, fonts, and color tokens. Default to `resources/红色.pptx` or `D:\Skills Development\pptx\resources\红色.pptx` for structure and to `style-anchor.md` for colors/fonts.
+- Confirm the visual target only when the user explicitly provides a non-default brand, website, screenshot, sample deck, or style direction.
 - Confirm every planned slide has one conclusion, one structural core, and source support.
 - Confirm tables/charts have enough room to stay readable.
 - Confirm any screenshot or picture slide has image source files or an explicit placeholder plan.

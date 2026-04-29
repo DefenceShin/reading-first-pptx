@@ -10,6 +10,7 @@ Use this file before and after building a deck. Treat P0 items as blockers.
 - A slide lacks a dominant conclusion or the conclusion is hard to find.
 - Charts or tables are unreadable at normal slide size.
 - The deck ignores the available company template, page size, or frame without user instruction.
+- The deck fails to use `resources/红色.pptx` or `D:\Skills Development\pptx\resources\红色.pptx` as the default structural/template baseline when no other visual target was provided.
 - Text boxes overlap, clip, or overflow.
 - The style drifts into dashboard, poster, blueprint, generic infographic, neon, or decorative template aesthetics.
 - A requested visual style is copied as a non-editable surface instead of translated into reusable PPT rules.
@@ -25,7 +26,8 @@ Before generation:
 - Assign major components to each slide.
 - Confirm which slides need charts, tables, screenshots, or diagrams.
 - Confirm fonts, color tokens, margins, title treatment, footer, and page size.
-- Confirm the visual-style source, the intended imitation strength, and which style traits should transfer.
+- Confirm `resources/红色.pptx` or `D:\Skills Development\pptx\resources\红色.pptx` is the structural baseline unless the user explicitly provided a different brand, website, screenshot, sample deck, or visual direction.
+- Confirm the external visual-style source, intended imitation strength, and transferred traits only when such a source was explicitly provided.
 - Confirm placeholder handling for missing images or incomplete data.
 
 ## Slide-Level Check
