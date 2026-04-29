@@ -1,0 +1,4 @@
+interface:
+  display_name: "Reading-First PPTX"
+  short_description: "Build dense, analytical, editable PPTX decks with structure and QA"
+  default_prompt: "Use $reading-first-pptx to turn my notes, files, and data into a dense, readable, editable .pptx deck."
