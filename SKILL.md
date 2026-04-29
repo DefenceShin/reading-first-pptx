@@ -17,7 +17,7 @@ description: Use when Codex needs to create or remake a high-density, reading-or
 - Apply the project writing rules to outward-facing PPT copy when they exist.
 - Use the `PowerPoint` skill for actual deck creation, editing, rendering, and verification when available.
 - Reuse the skill resources as an operating system: select a layout, select components, apply style rules, then run quality gates.
-- Use `resources/红色.pptx` as the default template/style baseline when the user gives no special visual requirement. If the relative path is unavailable, use `D:\Skills Development\pptx\resources\红色.pptx`. Do not ask whether to use it.
+- When the active PPT project folder provides `red.pptx` or `resources/red.pptx`, use it as the default template/style baseline. If it is unavailable, follow the normal baseline workflow or any reference/template the user explicitly provides. Do not require a template inside the skill directory.
 
 ## Workflow
 
@@ -50,7 +50,7 @@ Then restate the task in 2-4 lines.
 
 ### 2. Lock baseline
 
-- Use `resources/红色.pptx` as the default reference template for page size, layout behavior, report header rhythm, density, chart/table treatment, and red-anchor composition when it exists. If the current project does not contain that relative path, use `D:\Skills Development\pptx\resources\红色.pptx`.
+- In the active PPT project folder, use `red.pptx` or `resources/red.pptx` as the reference template for page size, layout behavior, report header rhythm, density, chart/table treatment, and red-anchor composition when either file exists. If neither exists, continue with the normal baseline workflow or the user's explicit reference/template.
 - Keep the original color and typography system from `references/style-anchor.md` while using that template baseline.
 - Do not ask the user to choose the default template/style unless the user explicitly asks for a different template, brand, website, screenshot, sample deck, or visual direction.
 - Inspect any available master, theme, or prior deck before creating slide geometry.
@@ -89,7 +89,7 @@ Before writing slides, read the relevant references:
 Preflight checks:
 
 - Confirm output path and expected file name.
-- Confirm page size, default template baseline, fonts, and color tokens. Default to `resources/红色.pptx` or `D:\Skills Development\pptx\resources\红色.pptx` for structure and to `style-anchor.md` for colors/fonts.
+- Confirm page size, default template baseline, fonts, and color tokens. Prefer `red.pptx` or `resources/red.pptx` in the active PPT project folder when present; otherwise use the normal baseline workflow or the user's explicit reference/template, with `style-anchor.md` for colors/fonts.
 - Confirm the visual target only when the user explicitly provides a non-default brand, website, screenshot, sample deck, or style direction.
 - Confirm every planned slide has one conclusion, one structural core, and source support.
 - Confirm tables/charts have enough room to stay readable.
