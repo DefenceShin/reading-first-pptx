@@ -4,6 +4,7 @@ Use these native PowerPoint components as reusable building blocks. Do not treat
 
 ## Component Selection
 
+- **Page type rationale**: Before composing a slide, select the closest consulting page type and know why nearby page types were rejected. This keeps dense decks from becoming generic title-plus-bullets pages.
 - **Conclusion title**: Use on every analytical slide. It should state the answer, not merely name the topic.
 - **Kicker chip**: Use for section, source, time period, or analysis lens. Keep it short and factual.
 - **Local header**: Use inside a dense body area to label a module. Prefer this over large colored cards.
@@ -15,6 +16,20 @@ Use these native PowerPoint components as reusable building blocks. Do not treat
 - **Decision note**: Use when the slide should end with a recommendation or action implication.
 - **Report header rule**: Use a thin top line plus compact metadata when the slide should read as a consulting/report page.
 - **Red anchor geometry**: Use one red circle, arc, arrow, marker, or highlight block to establish the scanning focal point.
+
+## Consulting Components
+
+Use these components when the content resembles a consulting deck pattern:
+
+- **Executive summary stack**: 2-4 bold takeaways, each with short evidence bullets, plus one final implication line. Use at the front of a working deck.
+- **Bottom-line impact page**: One decisive sentence or section thesis, usually on a darker or more concentrated field. Use sparingly for section resets or major conclusions.
+- **Takeaway pane**: A narrow side or bottom panel attached to a chart, matrix, or table. It explains what the reader should infer from the visual.
+- **Assessment table**: KPI, target, actual, status, and implication columns, grouped by category when useful.
+- **Prioritization map**: 2x2 or 3x3 matrix with labeled axes and a red focus zone or marker for the recommended area.
+- **Roadmap strip**: Sequential phases, milestones, owners, or dependency notes, with one risk/condition strip.
+- **Issue tree**: Decomposition of a question into branches, with evidence or implication notes at the leaves.
+
+Keep these components native and editable. Adapt external McKinsey-style references into this local component language instead of importing their code, colors, logos, or exact slide surfaces.
 
 ## Native PPTX Rules
 
@@ -84,6 +99,7 @@ Structure:
 - one red or navy emphasis on the key point
 - interpretation block explaining the delta, limit, or implication
 - source or method note when needed
+- do not let the visual end without a management meaning, decision meaning, or boundary note
 
 Do not leave a chart without an interpretation block.
 

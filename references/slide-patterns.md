@@ -11,6 +11,8 @@ Choose a pattern before placing objects. A pattern is a reasoning structure firs
 
 Use when the audience needs to understand why a topic matters before seeing options or actions.
 
+If the issue has a clear decomposition, use an issue-tree structure with branches and leaf implications instead of a loose concept diagram.
+
 ## 2. Comparison Matrix
 
 - conclusion-style title
@@ -43,6 +45,8 @@ Use when the slide would be weaker without the data shape.
 
 Do not place a chart on the page without interpretation.
 
+For executive-facing chart pages, prefer a main chart plus a right-side or bottom takeaway pane. Use one red emphasis point and keep all other series restrained.
+
 ## 5. Dense Table Page
 
 - strong title
@@ -52,6 +56,8 @@ Do not place a chart on the page without interpretation.
 - navy table headers, light gray support fields, and red key cells when the contrast is meaningful
 
 Use when the reader must scan many items after the meeting.
+
+For KPI/status work, use an assessment-table structure with target, actual, status, and implication fields when those dimensions exist.
 
 ## 6. Risk / Boundary Page
 
@@ -98,6 +104,16 @@ Use when notes, reports, screenshots, and tables must be reconciled into one rea
 
 Use when the reader needs to decide based on conditions rather than compare fixed options.
 
+## 10A. Prioritization / Portfolio Matrix
+
+- title that states the decision implication
+- 2x2 or 3x3 matrix with clear axis meaning
+- items plotted or placed into cells
+- one red focal zone, marker, or recommended cluster
+- takeaway pane explaining what to do next
+
+Use for initiative prioritization, market attractiveness, capability gaps, portfolio position, or risk/impact evaluation. Do not use when the data is a continuous scatterplot that needs exact x/y values; use a chart-with-interpretation page instead.
+
 ## 10B. Logical Architecture / System Map
 
 - title that states the system meaning
@@ -125,6 +141,24 @@ Use for process redesign, product change, policy change, or operating model shif
 
 Use at the front of a working deck when the audience needs the answer before the detail.
 
+## 13. Roadmap / Workplan
+
+- title that states the delivery logic or sequencing conclusion
+- horizontal timeline, phase chevrons, wave plan, or milestone table
+- compact notes for each phase or milestone
+- one dependency, risk, or decision strip
+
+Use when timing, sequencing, and ownership are part of the argument. Keep it closer to a management workplan than a decorative timeline.
+
+## 14. Bottom-Line Impact / Section Thesis
+
+- one decisive sentence
+- optional eyebrow, section marker, or small context line
+- restrained high-contrast field or concentrated navy region
+- no bullet clutter
+
+Use sparingly for major section resets, core findings, or closing arguments. Do not use for ordinary content pages.
+
 ## Page Rhythm
 
 For decks longer than 8 slides, avoid repeating the same structure too many times.
@@ -134,5 +168,6 @@ Good rhythm examples:
 - summary -> issue explainer -> comparison -> chart -> recommendation -> appendix
 - context -> source synthesis -> process -> risk boundary -> decision tree -> recommendation
 - issue -> chart -> dense table -> before/after -> recommendation -> appendix
+- bottom-line thesis -> executive summary -> issue tree -> chart with takeaway -> prioritization matrix -> roadmap -> recommendation -> appendix
 
 Do not add decorative divider pages unless they help the reader reset between major sections.

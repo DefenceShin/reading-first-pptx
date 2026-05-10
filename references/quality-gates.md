@@ -10,7 +10,8 @@ Use this file before and after building a deck. Treat P0 items as blockers.
 - A slide lacks a dominant conclusion or the conclusion is hard to find.
 - Charts or tables are unreadable at normal slide size.
 - The deck ignores the available company template, page size, or frame without user instruction.
-- The deck fails to use `resources/红色.pptx` or `D:\Skills Development\pptx\resources\红色.pptx` as the default structural/template baseline when no other visual target was provided.
+- The deck fails to use project-local `red.pptx` or `resources/red.pptx` as the default structural/template baseline when either exists and no other visual target was provided.
+- The deck applies `consulting-style-influences.md` on top of a different explicit style reference without the user asking to blend those styles.
 - Text boxes overlap, clip, or overflow.
 - The style drifts into dashboard, poster, blueprint, generic infographic, neon, or decorative template aesthetics.
 - A requested visual style is copied as a non-editable surface instead of translated into reusable PPT rules.

@@ -2,7 +2,7 @@
 
 ## Tone
 
-Default template baseline: use `resources/红色.pptx` for layout behavior, page rhythm, information density, header treatment, chart/table styling, and red-anchor composition when the user gives no special visual requirement. If that relative path is unavailable, use `D:\Skills Development\pptx\resources\红色.pptx`. Keep the color and typography tokens below as the default visual system.
+Default template baseline: use `red.pptx` or `resources/red.pptx` from the active PPT project folder for layout behavior, page rhythm, information density, header treatment, chart/table styling, and red-anchor composition when either file exists. If neither exists, continue with the normal baseline workflow. Keep the color and typography tokens below as the default visual system.
 
 - restrained
 - premium
@@ -12,6 +12,7 @@ Default template baseline: use `resources/红色.pptx` for layout behavior, page
 - explanation-driven
 - professional
 - document-like
+- McKinsey-style consulting report on the default/red-template path
 
 It should not feel like a dashboard, poster, blueprint, engineering drawing, or audience-specific campaign deck.
 
@@ -23,6 +24,7 @@ It should not feel like a dashboard, poster, blueprint, engineering drawing, or 
 - white or near-white canvas
 - red-and-navy consulting rhythm with a white report-like base
 - thin top header line or compact header system on most body pages
+- compact page chrome with tight top rule, small section marker, and restrained page/source notes
 - modular chips and local headers instead of heavy full-page bars
 - line-based organization, thin dividers, and subtle grouping
 - one clear focal conclusion with supporting analytical layers around it
@@ -63,6 +65,8 @@ Use red mainly for:
 
 Keep the background white or very light neutral. Do not introduce additional dominant colors unless the user explicitly asks for them.
 
+When borrowing consulting-deck conventions on the default/red-template path from external references such as `seulee26/mckinsey-pptx`, preserve this palette. Translate their blue-heavy or full-navy treatments into the local navy/red system instead of copying their colors. If the user provides another explicit style reference, follow that reference through `visual-style-transfer.md` instead of imposing this consulting influence.
+
 ## Typography
 
 - Chinese text: `汉仪中宋简`
@@ -84,10 +88,14 @@ These are the default production fonts. Do not replace them with fonts observed 
 - prefer embedded analytical zones over many large standalone cards
 - avoid equal-width multi-column layouts unless direct comparison is the real point
 - favor editable consulting-style structures: charts with interpretation, dense tables, KPI modules, risk matrices, process flows, maps, and logical architecture diagrams
+- choose a recognizable page type before drawing: executive summary, issue tree, comparison matrix, prioritization map, chart with takeaway pane, roadmap, process plan, assessment table, or dense appendix
+- make chart and table slides feel intentionally composed: chart/table first, interpretation block beside or below it, source/method note in the footer zone
+- use tight margins and disciplined body regions rather than oversized whitespace; consulting polish comes from alignment and compression, not emptiness
 - use red as a concentrated visual anchor on one major region of a slide; do not flood the whole page with red
 - use navy to carry structure in headers, table bands, diagram nodes, labels, and chart framing
 - use light gray fields to support tables and modules without becoming visually dominant
-- if no other reference is provided, make body pages feel structurally close to `resources/红色.pptx`: dense, modular, editable, chart/table heavy, and consulting-report oriented
+- if no other reference is provided and `red.pptx` or `resources/red.pptx` is available in the active PPT project folder, make body pages feel structurally close to that template: dense, modular, editable, chart/table heavy, and consulting-report oriented
+- if no other reference is provided, or if the active baseline is `red.pptx` / `resources/red.pptx`, make body pages feel structurally close to a McKinsey-style working deck: conclusion title, compact page chrome, one main analytical structure, explicit interpretation, and minimal ornament
 
 ## Density
 

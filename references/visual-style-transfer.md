@@ -2,7 +2,9 @@
 
 Use this only when the user explicitly provides a non-default visual reference and asks for a deck to match, imitate, absorb, borrow from, or feel like that style.
 
-Default behavior: if the user does not provide a special visual target, use `resources/红色.pptx` as the template baseline and `style-anchor.md` as the color/font authority. If the relative template path is unavailable, use `D:\Skills Development\pptx\resources\红色.pptx`. Do not ask the user to choose a visual direction.
+Default behavior: if the user does not provide a special visual target, use `red.pptx` or `resources/red.pptx` from the active PPT project folder as the template baseline when either file exists, and use `style-anchor.md` as the color/font authority. If neither file exists, continue with the normal baseline workflow. Do not ask the user to choose a visual direction.
+
+The accepted McKinsey-style consulting influence in `consulting-style-influences.md` belongs only to the default/red-template path. When a different explicit visual target is provided, do not apply that consulting influence unless the user explicitly asks to blend both styles.
 
 When this file is triggered, convert the external reference into editable PowerPoint rules instead of copying surfaces blindly.
 
@@ -30,8 +32,9 @@ Do not merely name the source style. State the reusable choices that can be appl
    - for a sample deck, inspect its masters, layouts, typography, colors, and recurring objects
    - for a screenshot, infer only visible traits and label uncertain items as inferred
 3. Write a compact style brief or design-spec before building when the external style materially changes the default.
-4. Decide whether the target deck should fully adopt the reference, lightly borrow it, or blend it with the default `resources/红色.pptx` structure and `style-anchor.md` colors/fonts.
-5. Convert web, poster, or image-model cues into native PowerPoint equivalents:
+4. Decide whether the target deck should fully adopt the reference, lightly borrow it, or blend it with the default `red.pptx` / `resources/red.pptx` structure and `style-anchor.md` colors/fonts.
+5. If the target is not the default/red-template path, exclude `consulting-style-influences.md` from the visual target unless the user explicitly requested a blend.
+6. Convert web, poster, or image-model cues into native PowerPoint equivalents:
    - CSS spacing -> slide margins and grid
    - web cards -> editable panels, table regions, or grouped shape modules
    - page hero -> cover or section divider only

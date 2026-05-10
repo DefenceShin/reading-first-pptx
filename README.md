@@ -5,6 +5,6 @@ Codex skill for creating dense, reading-oriented, analytical, editable PowerPoin
 ## Contents
 
 - `SKILL.md` - the skill entrypoint and workflow contract.
-- `references/` - style, content, layout, component, transfer, and quality-gate rules.
+- `references/` - style, consulting influence, content, layout, component, transfer, and quality-gate rules.
 - `agents/openai.yaml` - agent metadata for OpenAI/Codex use.
 
