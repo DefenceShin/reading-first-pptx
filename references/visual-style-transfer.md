@@ -40,7 +40,7 @@ Do not merely name the source style. State the reusable choices that can be appl
    - page hero -> cover or section divider only
    - animation -> static sequencing, layering, or progressive page rhythm
    - brand accent -> controlled highlight, not blanket recoloring
-6. Apply the style consistently across title, body, charts, tables, diagrams, and image assets.
+7. Apply the style consistently across title, body, charts, tables, diagrams, and image assets.
 
 ## Native PPTX Boundary
 

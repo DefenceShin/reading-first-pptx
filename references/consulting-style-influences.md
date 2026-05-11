@@ -1,14 +1,12 @@
 # Consulting Style Influences
 
-This skill's default visual language is already close to a McKinsey-style working deck. Use these rules only on the default style path: when no other visual target is provided, or when `red.pptx` / `resources/red.pptx` is the selected baseline. Preserve the local color and typography system.
-
-If the user provides another explicit style reference, brand page, screenshot, sample deck, or template, do not apply this influence unless they explicitly ask to blend it with the other reference.
+This skill's default visual language is already close to a McKinsey-style working deck. Use these rules only on the default/red-template path defined in `SKILL.md`. Preserve the local color and typography system.
 
 Reference observed: `https://github.com/seulee26/mckinsey-pptx`.
 
 ## What To Borrow
 
-- Select a concrete page type before composing: executive summary, bottom-line thesis, issue tree, chart with takeaway, assessment table, prioritization matrix, roadmap, org/process map, or appendix.
+- Select a concrete page type before composing.
 - Use conclusion titles and short section markers instead of decorative headlines.
 - Keep body pages dense, structured, and editable, with the analytical object carrying most of the page.
 - Pair charts and tables with interpretation panes, not free-floating visuals.
@@ -27,7 +25,6 @@ Reference observed: `https://github.com/seulee26/mckinsey-pptx`.
 
 ## What To Avoid
 
-- Do not apply this influence on top of another explicit style reference by default.
 - Do not import or depend on the external `mckinsey_pptx` package as the default production path.
 - Do not copy logos, watermarks, copyright text, exact slide surfaces, or proprietary-looking artifacts.
 - Do not copy the external theme colors when they conflict with the local palette.

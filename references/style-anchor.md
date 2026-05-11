@@ -43,7 +43,7 @@ It should not feel like a dashboard, poster, blueprint, engineering drawing, or 
 - Navy `#263F6A`
 - Crimson/Red `#AF0837`
 
-These are the default production colors. Do not replace them with colors extracted from `resources/红色.pptx` or another reference unless the user explicitly asks for a different brand or palette.
+These are the default production colors. Do not replace them with colors extracted from `red.pptx`, `resources/red.pptx`, or another reference unless the user explicitly asks for a different brand or palette.
 
 Use navy mainly for:
 
@@ -65,7 +65,7 @@ Use red mainly for:
 
 Keep the background white or very light neutral. Do not introduce additional dominant colors unless the user explicitly asks for them.
 
-When borrowing consulting-deck conventions on the default/red-template path from external references such as `seulee26/mckinsey-pptx`, preserve this palette. Translate their blue-heavy or full-navy treatments into the local navy/red system instead of copying their colors. If the user provides another explicit style reference, follow that reference through `visual-style-transfer.md` instead of imposing this consulting influence.
+When borrowing consulting-deck conventions on the default/red-template path, preserve this palette. Translate blue-heavy or full-navy treatments into the local navy/red system instead of copying their colors.
 
 ## Typography
 
@@ -74,12 +74,12 @@ When borrowing consulting-deck conventions on the default/red-template path from
 - English body text: `corpoS`
 - Mixed-language text boxes: keep Chinese on `汉仪中宋简`, English titles on `corpoA`, and English body on `corpoS`; do not collapse the whole box into one font.
 
-These are the default production fonts. Do not replace them with fonts observed in `resources/红色.pptx` or another reference unless the user explicitly asks for a different brand or typography system.
+These are the default production fonts. Do not replace them with fonts observed in `red.pptx`, `resources/red.pptx`, or another reference unless the user explicitly asks for a different brand or typography system.
 
 ## Layout
 
 - keep the top area visually light
-- use the report-like header rhythm from `resources/红色.pptx`: thin top rule, compact metadata, and restrained page marks when useful
+- use the report-like header rhythm from `red.pptx` or `resources/red.pptx` when available: thin top rule, compact metadata, and restrained page marks when useful
 - let the middle body carry most of the information density
 - prefer asymmetrical editorial layouts
 - use one dominant analysis zone plus one or more support zones when possible

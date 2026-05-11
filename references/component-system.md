@@ -4,7 +4,7 @@ Use these native PowerPoint components as reusable building blocks. Do not treat
 
 ## Component Selection
 
-- **Page type rationale**: Before composing a slide, select the closest consulting page type and know why nearby page types were rejected. This keeps dense decks from becoming generic title-plus-bullets pages.
+- **Page type rationale**: Before composing a slide, select the closest page type and know why nearby page types were rejected. This keeps dense decks from becoming generic title-plus-bullets pages.
 - **Conclusion title**: Use on every analytical slide. It should state the answer, not merely name the topic.
 - **Kicker chip**: Use for section, source, time period, or analysis lens. Keep it short and factual.
 - **Local header**: Use inside a dense body area to label a module. Prefer this over large colored cards.
@@ -29,7 +29,7 @@ Use these components when the content resembles a consulting deck pattern:
 - **Roadmap strip**: Sequential phases, milestones, owners, or dependency notes, with one risk/condition strip.
 - **Issue tree**: Decomposition of a question into branches, with evidence or implication notes at the leaves.
 
-Keep these components native and editable. Adapt external McKinsey-style references into this local component language instead of importing their code, colors, logos, or exact slide surfaces.
+Keep these components native and editable. On the default/red-template path, adapt McKinsey-style references into this local component language instead of importing their code, colors, logos, or exact slide surfaces.
 
 ## Native PPTX Rules
 

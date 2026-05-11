@@ -18,7 +18,7 @@ description: Use when Codex needs to create or remake a high-density, reading-or
 - Use the `PowerPoint` skill for actual deck creation, editing, rendering, and verification when available.
 - Reuse the skill resources as an operating system: select a layout, select components, apply style rules, then run quality gates.
 - When the active PPT project folder provides `red.pptx` or `resources/red.pptx`, use it as the default template/style baseline. If it is unavailable, follow the normal baseline workflow or any reference/template the user explicitly provides. Do not require a template inside the skill directory.
-- Keep the default visual system close to a McKinsey-style consulting deck when no other visual target is provided, or when `red.pptx` / `resources/red.pptx` is the active baseline. Preserve the existing color and typography tokens unless the user explicitly asks to replace them. If the user provides a different style reference, do not layer this consulting influence on top of that reference.
+- On the default path, including when `red.pptx` / `resources/red.pptx` is the active baseline, keep the visual system close to a McKinsey-style consulting deck while preserving the existing color and typography tokens. If the user provides a different style reference, do not layer this consulting influence on top of that reference unless they explicitly ask to blend both.
 
 ## Workflow
 
@@ -53,12 +53,11 @@ Then restate the task in 2-4 lines.
 
 - In the active PPT project folder, use `red.pptx` or `resources/red.pptx` as the reference template for page size, layout behavior, report header rhythm, density, chart/table treatment, and red-anchor composition when either file exists. If neither exists, continue with the normal baseline workflow or the user's explicit reference/template.
 - Keep the original color and typography system from `references/style-anchor.md` while using that template baseline.
-- Treat `references/consulting-style-influences.md` as part of the default style path only: use it when no other visual target is provided, or when `red.pptx` / `resources/red.pptx` is the selected baseline. If the user provides another explicit visual reference, do not apply this file unless they explicitly ask to combine it.
 - Do not ask the user to choose the default template/style unless the user explicitly asks for a different template, brand, website, screenshot, sample deck, or visual direction.
 - Inspect any available master, theme, or prior deck before creating slide geometry.
 - Keep the visual language native to PowerPoint: editable text boxes, tables, charts, shapes, lines, and grouped elements.
 - Avoid rasterizing whole slides, embedding HTML screenshots as slide bodies, or using non-editable image composites unless the source itself is an image.
-- If the user explicitly provides a non-default style target, translate it through `references/visual-style-transfer.md` before designing slides, and do not also apply `consulting-style-influences.md` unless the user explicitly asks to blend both.
+- If the user explicitly provides a non-default style target, translate it through `references/visual-style-transfer.md` before designing slides.
 
 If the workspace also contains real internal report decks or prior business presentations, use them only to infer density expectations, grouping habits, and practical tolerance for single-slide information load. Do not depend on any one file as a required reference.
 
@@ -83,7 +82,7 @@ If the source pack is large, mixed, or incomplete, stop here and confirm the out
 Before writing slides, read the relevant references:
 
 - `references/style-anchor.md` for the fixed visual language.
-- `references/consulting-style-influences.md` for default consulting-deck grammar only when no other visual target is provided, or when the red template baseline is active.
+- `references/consulting-style-influences.md` for default/red-template consulting-deck grammar.
 - `references/content-rules.md` for density, inference, and wording boundaries.
 - `references/slide-patterns.md` for page structure selection.
 - `references/component-system.md` for reusable native PowerPoint building blocks.

@@ -27,7 +27,7 @@ Before generation:
 - Assign major components to each slide.
 - Confirm which slides need charts, tables, screenshots, or diagrams.
 - Confirm fonts, color tokens, margins, title treatment, footer, and page size.
-- Confirm `resources/红色.pptx` or `D:\Skills Development\pptx\resources\红色.pptx` is the structural baseline unless the user explicitly provided a different brand, website, screenshot, sample deck, or visual direction.
+- Confirm project-local `red.pptx` or `resources/red.pptx` is the structural baseline when either exists and the user did not provide a different brand, website, screenshot, sample deck, or visual direction.
 - Confirm the external visual-style source, intended imitation strength, and transferred traits only when such a source was explicitly provided.
 - Confirm placeholder handling for missing images or incomplete data.
 
